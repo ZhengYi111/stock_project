@@ -1,0 +1,30 @@
+# 强制忽略.env类文件
+.env*
+!.env.example
+
+# 核心敏感文件
+.env
+sdk.log
+
+# 数据文件防误传
+/data/
+# 假设需要保留raw数据
+!/data/raw/  
+
+# 开发环境文件
+.ipynb_checkpoints/
+.virtual_documents/
+anaconda_projects/
+__pycache__/
+*.pyc
+
+# 生成文件
+/report_generated/
+*.ipynb.pdf
+
+# IDE配置
+.vscode/
+.idea/
+*.code-workspace
+
+.DS_Store
